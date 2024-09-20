@@ -1,0 +1,58 @@
+<!-- templates/index.html -->
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>National Council of Science Museums</h1>
+    <h3>Start the conversation</h3>
+
+    <!-- Chatbot image -->
+    <img id="chatbot-img" src="{% static 'images/img1.jpg' %}" alt="Chatbot Icon">
+
+    <div id="chatbox" style="display: none;">
+        <div id="chatbot-header">Mitra-Chatbot</div>
+        <div id="chatbox-content">
+            
+            <div id="messages"></div>
+            <div id="user-input" style="display: none;">
+                <input type="text" id="user-name" placeholder="Enter your name">
+                <button id="submit-name">Submit</button>
+            </div>
+            <div id="date-input" style="display: none;">
+                <input type="date" id="visit-date">  
+                <button id="submit-date">Submit</button>
+            </div>
+            <div id="ticket-input" style="display: none;">
+                <input type="text" id="ticket-id" placeholder="Enter ticket ID">
+                <button id="submit-ticket">Submit</button>
+            </div>
+            <div id="ticket-count-input" style="display: none;">
+                <br><label for="num-adults">Number of Adults: <input type="number" id="num-adults" placeholder="Number of adults" min="0"></label></br>
+                <br><label for="num-children">Number of Children: <input type="number" id="num-children" placeholder="Number of children" min="0"></label></br>
+                <br><label for="num-senior-citizens">Number of Senior-Citizens:  <input type="number" id="num-senior-citizens" placeholder="Number of senior citizens" min="0"></label></br>
+                <button id="submit-ticket-count">Submit</button>
+            </div>
+                  
+            <div id="chatbox-buttons" >
+                <button id="book-ticket">Book Ticket</button>
+                <button id="cancel-ticket">Cancel Ticket</button>
+                <button id="show-info">Show Info on Exhibits</button>
+            </div>
+        </div>
+       
+    </div>
+
+
+    <script src="{% static 'chatbot.js' %}"></script>
+</body>
+</html>
+
+
