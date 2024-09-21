@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function appendMessage(message, isUser = false) {
         const messageDiv = document.createElement('div');
-        messageDiv.textContent = message;
+        messageDiv.innerHTML = message;
         messageDiv.classList.add(isUser ? 'user-message' : 'bot-message');
         messagesDiv.appendChild(messageDiv);
         messagesDiv.scrollTop = messagesDiv.scrollHeight;  // Scroll to the bottom
@@ -135,8 +135,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }),
         }).then(response => response.json())
           .then(data => {
-              appendMessage(`Your ticket has been booked for ${visitDate}. Ticket ID: ${data.ticket_id}`, false);
-              appendMessage(`Total price: ${data.total_price}`, false);
+              appendMessage(`Ticket Booked Successfully!<br><br>Booking Details:<br>
+                Name: ${userName}<br>
+                Visit Date: ${data.visit_date}<br>
+                Number of persons: ${data.total_no_of_persons}<br>
+                Total Price: Rs.${data.total_price}<br>
+                Ticket ID: ${data.ticket_id}<br>`, false);
+              appendMessage("Thank you for booking your ticket!", false);
               restartChat();
           });
     }
