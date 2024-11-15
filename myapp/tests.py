@@ -1,10 +1,6 @@
 
 '''
-"maine test krne k liye program likha tha
-baadme reference k liye kaam aayegaa.
-Yaad rkhne ye program sirf test krne k liye hai
-koi database mai store nhi hone wala hai yeh 
-okay"
+
 
 # Create your tests here.
 from django.test import TestCase
