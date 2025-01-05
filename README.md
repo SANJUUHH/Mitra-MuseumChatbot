@@ -16,10 +16,10 @@ A multilingual chatbot-based ticketing system is proposed to address these issue
 
 ___
 
-![FLOWDIAGRAMCHATBOT](https://github.com/user-attachments/assets/9b5051ea-5053-4f97-bf90-cc5a1a03c300)
-
-
-
+### Checkout the Documentation for more details about the project :
 [Chatbot Research Analysis.pdf](https://github.com/user-attachments/files/17774310/Chatbot.Research.Analysis.pdf)
+___
+
+![FLOWDIAGRAMCHATBOT](https://github.com/user-attachments/assets/9b5051ea-5053-4f97-bf90-cc5a1a03c300)
 
 [![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/obDYDxIjzXc)
