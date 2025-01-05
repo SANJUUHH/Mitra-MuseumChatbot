@@ -1,3 +1,7 @@
+# MITRA -Museum Chatbot
+
+This is the chatbot project inspired from the problem statement "	Online Chatbot based ticketing system" from the SIH-2024.
+
 ![FLOWDIAGRAMCHATBOT](https://github.com/user-attachments/assets/9b5051ea-5053-4f97-bf90-cc5a1a03c300)
 
 
